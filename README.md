@@ -1,6 +1,5 @@
-# personalportfolio
+# webclone
 
-This (work in progress) will be my official portfolio page. 
-I'm experimenting with different layouts and ideas.
+Clone of a full-blown website
 
 Made with HTML | SCSS | Grid | BEM methodology
