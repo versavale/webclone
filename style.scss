@@ -1,3 +1,55 @@
-h1 {
-    color: pink;
+@import "constants";
+
+html, body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+section {
+  min-height: 100vh;
+}
+
+nav {
+  background-color: transparent;
+  color: white;
+  height: 5rem;
+  position: fixed;
+  width: 100%;
+  z-index: 500;
+}
+
+.nav__wrap {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 1rem auto;
+  width: 90%;
+  height: 100%;
+  align-items: center;
+  justify-content: start;
+}
+
+.nav__left {
+  color: white;
+}
+
+.nav__right {
+
+  ul {
+    align-self: center;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0 2px;
+  }
+
+  li {
+    display: inline-block;
+  }
+}
+
+.hero {
+  background-image: url(assets/hero2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
