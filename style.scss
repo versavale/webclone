@@ -2,6 +2,7 @@
 
 html, body {
   margin: 0;
+  padding: 0;
   font-family: "Lato", sans-serif;
 }
 
@@ -10,22 +11,48 @@ section {
 }
 
 nav {
-  background-color: transparent;
-  color: white;
-  height: 5rem;
   position: fixed;
   width: 100%;
   z-index: 500;
 }
 
-.nav__wrap {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  margin: 1rem auto;
-  width: 90%;
-  height: 100%;
-  align-items: center;
-  justify-content: start;
+.nav--trans {
+  background-color: transparent;
+  color: white;
+  height: 6rem;
+
+  .nav__wrap {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0 auto;
+    padding-top: 1rem;
+    width: 90%;
+    height: 4rem;
+    align-items: center;
+    justify-content: start;
+  }
+}
+
+.nav--col {
+  background-color: white;
+  color: black;
+  height: 4rem;
+  transition: all .5s ease-in-out;
+
+  h1 {
+    color: black;
+  }
+
+  .nav__wrap {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0 auto;
+    padding-top: 0;
+    width: 90%;
+    height: 4rem;
+    align-items: center;
+    justify-content: start;
+  }
 }
 
 .nav__left {
@@ -52,4 +79,18 @@ nav {
   background-image: url(assets/hero2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.hero__wrap {
+  padding-top: 20vh;
+  color: $white;
+  text-align: center;
+}
+
+.hero__main {
+  font-size: $font-big;
+}
+
+.hero__sub {
+  font-size: $font-sub;
 }
