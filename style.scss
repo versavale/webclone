@@ -10,6 +10,7 @@ section {
   min-height: 100vh;
 }
 
+//NAV
 nav {
   position: fixed;
   width: 100%;
@@ -98,22 +99,44 @@ nav {
   }
 }
 
+//HERO
 .hero {
   background-image: url(assets/hero2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  display: block;
 }
 
 .hero__wrap {
-  padding-top: 20vh;
+  padding-top: 30vh;
   color: $white;
   text-align: center;
 }
 
 .hero__main {
   font-size: $font-big;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 2rem;
 }
 
 .hero__sub {
   font-size: $font-sub;
+  margin: 0;
+  padding: 0;
+}
+
+//ABOUT
+.about {
+  background-color: red;
+}
+
+.about__card {
+  background-color: $white;
+  border: 1px solid grey;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 10rem;
+  padding-bottom: 1rem;
+  height: auto;
 }
