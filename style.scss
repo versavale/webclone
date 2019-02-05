@@ -20,6 +20,18 @@ nav {
   background-color: transparent;
   color: white;
   height: 6rem;
+  transition: all .5s ease-in-out;
+
+  a {
+    text-decoration: none;
+    color: white;
+    padding-bottom: 2px;
+
+    &:hover {
+      border-bottom: 2px solid white;
+      transition: all 0.5s ease-in-out;
+    }
+  }
 
   .nav__wrap {
     display: grid;
@@ -38,6 +50,17 @@ nav {
   color: black;
   height: 4rem;
   transition: all .5s ease-in-out;
+
+  a {
+    text-decoration: none;
+    color: black;
+    padding-bottom: 2px;
+
+    &:hover {
+      border-bottom: 2px solid black;
+      transition: all 0.2s ease-in-out;
+    }
+  }
 
   h1 {
     color: black;
