@@ -128,15 +128,28 @@ nav {
 
 //ABOUT
 .about {
-  background-color: red;
+  background-color: $light;
+  padding-top: 10vh;
 }
 
 .about__card {
   background-color: $white;
-  border: 1px solid grey;
   width: 80%;
   margin: 0 auto;
-  padding-top: 10rem;
-  padding-bottom: 1rem;
-  height: auto;
+  height: 300px;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+  -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  -moz-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.about__left {
+  background-color: red;
+}
+
+.about__right {
+  background-color: blue;
 }
