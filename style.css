@@ -1,3 +1,15 @@
+h1 {
+  font-size: 3rem; }
+
+h2 {
+  font-size: 2.5rem; }
+
+h3 {
+  font-size: 1.8rem; }
+
+h4 {
+  font-size: 1.4rem; }
+
 .layout--two-columns {
   display: -ms-grid;
   display: grid;
@@ -169,7 +181,7 @@ nav {
     .nav--col a:hover {
       border-bottom: 2px solid black;
       transition: all 0.2s ease-in-out; }
-  .nav--col h1 {
+  .nav--col h4 {
     color: black; }
   .nav--col .nav__wrap {
     display: grid;
@@ -235,7 +247,27 @@ nav {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
 
 .about__left {
-  background-color: red; }
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding: 35px; }
 
-.about__right {
-  background-color: blue; }
+.about__left--up {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+
+.about__photo {
+  height: 10rem;
+  width: 10rem;
+  background-image: url("assets/head.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 6px;
+  grid-column: 1; }
+
+.about__description p {
+  font-size: 1 rem;
+  margin: 0 0 1rem 0; }
+
+.about__right h2 {
+  display: inline-block; }

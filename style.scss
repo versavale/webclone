@@ -63,7 +63,7 @@ nav {
     }
   }
 
-  h1 {
+  h4 {
     color: black;
   }
 
@@ -147,9 +147,39 @@ nav {
 }
 
 .about__left {
-  background-color: red;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding: 35px;
 }
 
-.about__right {
-  background-color: blue;
+.about__left--up {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
+
+.about__photo {
+  height: 10rem;
+  width: 10rem;
+  background-image: url("assets/head.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 6px;
+  grid-column: 1;
+}
+
+.about__description {
+
+  p {
+    font-size: 1 rem;
+    margin: 0 0 1rem 0;
+  }
+}
+
+
+.about__right {
+  h2 {
+    display: inline-block;
+  }
+}
+
