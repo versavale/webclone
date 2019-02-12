@@ -54,7 +54,7 @@ nav {
 
   a {
     text-decoration: none;
-    color: black;
+    color: $blue;
     padding-bottom: 2px;
 
     &:hover {
@@ -64,7 +64,7 @@ nav {
   }
 
   h4 {
-    color: black;
+    color: $blue;
   }
 
   .nav__wrap {
@@ -137,7 +137,6 @@ nav {
   background-color: $white;
   width: 80%;
   margin: 0 auto;
-  height: 300px;
   display: -ms-grid;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -149,13 +148,14 @@ nav {
 
 .about__left {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto auto;
   padding: 35px;
 }
 
 .about__left--up {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  height: auto;
 }
 
 .about__photo {
@@ -170,7 +170,6 @@ nav {
 }
 
 .about__description {
-
   p {
     font-size: 1 rem;
     margin: 0 0 1rem 0;
@@ -179,8 +178,38 @@ nav {
 
 
 .about__right {
+  padding: 35px;
   h2 {
     display: inline-block;
+    margin: 0 0 10px 0;
+    border-bottom: 3px solid $blue;
+  }
+  .about__desc {
+    font-size: 1.25rem;
+    font-weight: 300;
   }
 }
 
+.about__left--down {
+  progress[value] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: .7rem;
+  }
+  progress[value]::-webkit-progress-bar {
+    background-color: $light-blue;
+    border-radius: 2px;
+  }
+  progress[value]::-webkit-progress-value {
+    background-color: $blue;
+    border-radius: 2px;
+  }
+  p {
+    margin: 14px 0 10px 0;
+  }
+  .skills-wrap {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+}
