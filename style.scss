@@ -311,7 +311,7 @@ nav {
 
 //WORK
 .work {
-  min-height: 50vh;
+  min-height: 70vh;
   background-attachment: fixed;
   background-image: url(assets/work.jpg);
   background-repeat: no-repeat;
@@ -319,6 +319,41 @@ nav {
   display: block;
 }
 
+.work__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 100%;
+  width: 80%;
+  margin: auto;
+}
+
+.work__stat {
+  justify-self: center;
+}
+
+.work__circle{
+  display:inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 10px;
+  border-color: $blue;
+  background-color: transparent;
+}
+
+.work__icon {
+  font-size: 3rem;
+  color: $white;
+  margin-top: 2rem;
+  position: relative;
+  bottom: 15px;
+  left: 15px;
+
+  i {
+    margin-top: 30px;
+  }
+}
 
 //CONTACT
 .contact {
