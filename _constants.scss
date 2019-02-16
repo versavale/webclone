@@ -16,6 +16,9 @@ $font-sub: 2.5rem;
 
 @media (min-width: 993px) {
 } */
+html, body {
+  background-color: $light;
+}
 
 h1 {
   font-size: 3rem;

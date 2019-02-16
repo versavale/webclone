@@ -58,7 +58,7 @@ nav {
     padding-bottom: 2px;
 
     &:hover {
-      border-bottom: 2px solid black;
+      border-bottom: 2px solid $blue;
       transition: all 0.2s ease-in-out;
     }
   }
@@ -212,4 +212,18 @@ nav {
     display: grid;
     grid-template-columns: 1fr auto;
   }
+}
+
+
+//services
+
+.services__title {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.services__subtitle {
+  text-align: center;
 }
