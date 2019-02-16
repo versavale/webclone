@@ -228,7 +228,7 @@ nav {
 
 //services
 
-.services__title {
+.services__header {
   margin-bottom: 15px;
   margin-top: 15px;
   text-align: center;
@@ -237,4 +237,70 @@ nav {
 
 .services__subtitle {
   text-align: center;
+}
+
+.services__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.services__show {
+  -moz-box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+  -ms-grid-columns: 1fr 1fr;
+  -webkit-box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+  background-color: $white;
+  border-radius: 1rem;
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  text-align: center;
+  width: 80%;
+
+  &:hover {
+    .services__circle {
+      background-color: $blue;
+      border-color: $grey-light;
+      transition: all 500ms ease;
+    }
+    .services__icon {
+      color: $white;
+      transition: all 500ms ease;
+    }
+  }
+}
+
+.services__circle{
+  display:inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 10px;
+  border-color: $blue;
+  background-color: $white;
+  margin-top: 30px;
+}
+
+.services__icon {
+  font-size: 3rem;
+  color: $black;
+  margin-top: 2rem;
+  position: relative;
+  bottom: 15px;
+
+  i {
+    margin-top: 30px;
+  }
+}
+
+.services__title {
+  margin-top: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.services__description {
+  text-align: center;
+  padding: 0 15px;
+  margin-bottom: 35px;
 }
