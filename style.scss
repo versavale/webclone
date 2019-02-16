@@ -6,9 +6,6 @@ html, body {
   font-family: "Lato", sans-serif;
 }
 
-section {
-  min-height: 100vh;
-}
 
 //NAV
 nav {
@@ -106,6 +103,7 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
+  min-height: 100vh;
 }
 
 .hero__wrap {
@@ -131,6 +129,7 @@ nav {
 .about {
   background-color: $light;
   padding-top: 10vh;
+  min-height: 100vh;
 }
 
 .about__card {
@@ -227,6 +226,9 @@ nav {
 
 
 //services
+.services {
+  min-height: 100vh;
+}
 
 .services__header {
   margin-bottom: 15px;
@@ -243,6 +245,7 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  margin-bottom: 40px;
 }
 
 .services__show {
@@ -303,4 +306,21 @@ nav {
   text-align: center;
   padding: 0 15px;
   margin-bottom: 35px;
+}
+
+
+//WORK
+.work {
+  min-height: 50vh;
+  background-attachment: fixed;
+  background-image: url(assets/work.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+}
+
+
+//CONTACT
+.contact {
+  min-height: 100vh;
 }
