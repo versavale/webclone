@@ -436,6 +436,9 @@ nav {
   text-align: center;
   margin: 10px; }
 
+.work__number--pop {
+  color: red; }
+
 .work__description {
   color: #ffffff;
   text-align: center;

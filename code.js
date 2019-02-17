@@ -39,7 +39,7 @@ class TxtType {
   }
 }
 
-
+//typewriter effect
 window.onload = function() {
   var elements = document.getElementsByClassName('typewrite');
   for (var i=0; i<elements.length; i++) {
@@ -49,14 +49,13 @@ window.onload = function() {
       new TxtType(elements[i], JSON.parse(toRotate), period);
     }
   }
-  // INJECT CSS
   var css = document.createElement("style");
   css.type = "text/css";
   css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
   document.body.appendChild(css);
 };
 
-
+//nav changing color
 window.onscroll = function() {
   var navbar = document.getElementById('nav');
   if (window.scrollY >= 50) {
