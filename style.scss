@@ -312,11 +312,11 @@ nav {
 //WORK
 .work {
   min-height: 70vh;
+  display: block;
   background-attachment: fixed;
   background-image: url(assets/work.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  display: block;
 }
 
 .work__wrapper {
@@ -324,11 +324,13 @@ nav {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   height: 100%;
   width: 80%;
-  margin: auto;
+  padding-top: 150px;
+  margin: 0 auto;
 }
 
 .work__stat {
   justify-self: center;
+  text-align: center;
 }
 
 .work__circle{
@@ -338,7 +340,7 @@ nav {
   border-radius: 50%;
   border-style: solid;
   border-width: 10px;
-  border-color: $blue;
+  border-color: $white;
   background-color: transparent;
 }
 
@@ -348,12 +350,32 @@ nav {
   margin-top: 2rem;
   position: relative;
   bottom: 15px;
-  left: 15px;
 
   i {
     margin-top: 30px;
   }
 }
+
+.work__number {
+  color: $white;
+  font-size: 2rem;
+  text-align: center;
+  margin: 10px;
+}
+
+.work__description {
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+
+
+
+
+
+
 
 //CONTACT
 .contact {

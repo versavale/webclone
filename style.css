@@ -393,21 +393,23 @@ nav {
 
 .work {
   min-height: 70vh;
+  display: block;
   background-attachment: fixed;
   background-image: url(assets/work.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  display: block; }
+  background-size: cover; }
 
 .work__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   height: 100%;
   width: 80%;
-  margin: auto; }
+  padding-top: 150px;
+  margin: 0 auto; }
 
 .work__stat {
-  justify-self: center; }
+  justify-self: center;
+  text-align: center; }
 
 .work__circle {
   display: inline-block;
@@ -416,7 +418,7 @@ nav {
   border-radius: 50%;
   border-style: solid;
   border-width: 10px;
-  border-color: #0078ff;
+  border-color: #ffffff;
   background-color: transparent; }
 
 .work__icon {
@@ -424,10 +426,21 @@ nav {
   color: #ffffff;
   margin-top: 2rem;
   position: relative;
-  bottom: 15px;
-  left: 15px; }
+  bottom: 15px; }
   .work__icon i {
     margin-top: 30px; }
+
+.work__number {
+  color: #ffffff;
+  font-size: 2rem;
+  text-align: center;
+  margin: 10px; }
+
+.work__description {
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10px; }
 
 .contact {
   min-height: 100vh; }
