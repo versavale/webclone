@@ -4,6 +4,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: "Lato", sans-serif;
+  background-color: $light;
 }
 
 
@@ -375,31 +376,31 @@ nav {
 }
 
 
-//portfolio
+//blog
 
-.portfolio {
-  min-height: 70vh;
+.blog {
+  min-height: 50vh;
 }
 
-.portfolio__header {
+.blog__header {
   margin-bottom: 15px;
-  margin-top: 15px;
+  margin-top: 45px;
   text-align: center;
   text-transform: uppercase;
 }
 
-.portfolio__subtitle {
+.blog__subtitle {
   text-align: center;
 }
 
-.portfolio__wrapper {
+.blog__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: 90%;
   margin: 0 auto;
 }
 
-.portfolio__show {
+.blog__show {
   box-sizing: border-box;
   -moz-box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
@@ -410,14 +411,14 @@ nav {
   width: 80%;
 }
 
-.portfolio__top {
+.blog__top {
   overflow: hidden;
   box-sizing: border-box;
   height: 10rem;
   width: 100%;
 }
 
-.portfolio__pic {
+.blog__pic {
   width: 100%;
   height: 100%;
   background-color: $black;
@@ -426,41 +427,132 @@ nav {
   transition: all .5s;
 }
 
-.portfolio__pic--1 {
+.blog__pic--1 {
   background-image: url(assets/port_1.jpg);
 }
 
-.portfolio__pic--2 {
+.blog__pic--2 {
 background-image: url(assets/port_2.jpg);
 }
 
-.portfolio__pic--3 {
+.blog__pic--3 {
   background-image: url(assets/port_3.jpg);
 }
 
-.portfolio__top:hover .portfolio__pic,
-.portfolio__top:focus .portfolio__pic {
+.blog__top:hover .blog__pic,
+.blog__top:focus .blog__pic {
   transform: scale(1.2);
 }
 
-.portfolio__text {
+.blog__text {
   padding: 0 16px 16px 16px;
 }
 
-.portfolio__subs {
+.blog__subs {
   font-size: .8rem;
 }
 
-.portfolio__more {
+.blog__more {
   margin: 10px auto 20px auto;
   width: 85%;
   text-align: end;
 
   a {
     text-decoration: none;
+    font-weight: bold;
   }
 }
 //CONTACT
-.contact {
+.contacts {
   min-height: 100vh;
 }
+
+
+.contacts {
+  min-height: 70vh;
+  display: block;
+  background-attachment: fixed;
+  background-image: url(assets/work.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 3rem;
+}
+
+.contacts__wrapper {
+  width: 80%;
+  margin: 20px auto;
+  background-color: $light;
+  display: grid;
+  padding: 2rem;
+  grid-template-columns: [message] 1fr [infos] 1fr;
+  height: 70vh;  //Will go.
+}
+
+.contacts__messages {
+  grid-column: message;
+}
+
+.contacts__infos {
+  grid-column: infos;
+}
+
+.contacts__m-data {
+  display: grid;
+  grid-template-columns: [icon] auto [text] 1fr;
+  grid-template-rows: [location] 1fr [telephone] 1fr [email] 1fr;
+}
+
+.contacts__m-i {
+  color: $blue;
+  padding-right: 15px;
+}
+
+.contacts__m-text, .contacts__m-i {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.contacts__m-social {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 50%;
+  margin-top: 20px;
+}
+
+.contacts__m-s-wrap:hover {
+
+  .contacts__m-circle {
+    background-color: $blue;
+    border-color: $grey-light;
+    transition: all 500ms ease;
+  }
+
+  .contacts__m-icon {
+    color: $white;
+    transition: all 500ms ease;
+  }
+}
+
+.contacts__m-circle {
+  display:inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 4px;
+  border-color: $blue;
+  background-color: transparent;
+}
+
+.contacts__m-icon {
+  font-size: 1rem;
+  color: $black;
+  position: relative;
+  bottom: -4px;
+  left: 7px;
+}
+
+.contacts__m-icon--f {
+  margin-left: 3px;
+}
+
