@@ -572,7 +572,7 @@ nav {
   height: 30px;
   border-radius: 50%;
   border-style: solid;
-  border-width: 4px;
+  border-width: 2px;
   border-color: #0078ff;
   background-color: transparent; }
 
@@ -585,3 +585,6 @@ nav {
 
 .contacts__m-icon--f {
   margin-left: 3px; }
+
+.contacts__m-icon--p {
+  margin-left: 2px; }
