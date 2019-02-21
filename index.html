@@ -18,6 +18,7 @@
   <script type="text/javascript" src="code.js"></script>
   </head>
   <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <nav class="nav nav--trans" id="nav">
       <div class="nav__wrap">
         <div class="nav__left">
@@ -242,6 +243,14 @@
       <div class="contacts__wrapper">
         <div class="contacts__messages">
           <h3 class="contacts__m-header">Message Me</h3>
+          <form>
+            <input type="text" class="name" placeholder="First name">
+            <input type="text" class="surname" placeholder="Last Name">
+            <input type="email" class="email" placeholder="example@example.com">
+            <input type="text" class="subject" placeholder="Subject">
+            <textarea type="text" class="textarea" placeholder="Message"></textarea>
+            <input type="submit" value="Submit" class="contacts__submit-button">
+          </form>
         </div>
         <div class="contacts__infos">
           <h3 class="contacts__m-infos">Get in touch</h3>

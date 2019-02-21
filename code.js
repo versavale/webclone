@@ -1,4 +1,12 @@
-//typewriter on hero
+// top button
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+  console.log ('maaaaaaaa');
+}
+
+// typewriter on hero
 class TxtType {
   constructor(el, toRotate, period) {
     this.toRotate = toRotate;
@@ -39,7 +47,7 @@ class TxtType {
   }
 }
 
-//typewriter effect
+// typewriter effect
 window.onload = function() {
   var elements = document.getElementsByClassName('typewrite');
   for (var i=0; i<elements.length; i++) {
@@ -55,7 +63,7 @@ window.onload = function() {
   document.body.appendChild(css);
 };
 
-//nav changing color
+// nav changing color
 window.onscroll = function() {
   var navbar = document.getElementById('nav');
   if (window.scrollY >= 50) {
