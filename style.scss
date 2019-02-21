@@ -605,13 +605,25 @@ input, textarea {
   resize: vertical;
 }
 
-// @media screen and (max-width: 795px) {
-// }
+@media screen and (max-width: 795px) {
+  .hero__main {
+    font-size: 3rem;
+  }
 
-@media (max-width: 992px) {
- .about__card {
-   grid-template-columns: 1fr;
-   grid-template-rows: 1fr 1fr;
+  .about__card {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media (min-width: 795px) and (max-width: 992px) {
+  .hero__main {
+    font-size: 4rem;
+  }
+
+  .about__card {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 }
 
