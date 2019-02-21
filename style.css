@@ -1,11 +1,3 @@
-/* @media screen and (max-width: 795px) {
-}
-
-@media (min-width: 796px) and (max-width: 992px) {
-}
-
-@media (min-width: 993px) {
-} */
 h1 {
   font-size: 3rem; }
 
@@ -601,7 +593,7 @@ nav {
   left: 7px; }
 
 .contacts__m-icon--f {
-  margin-left: 3px; }
+  margin-left: 4px; }
 
 .contacts__m-icon--p {
   margin-left: 2px; }
@@ -626,3 +618,11 @@ input, textarea {
 
 .textarea {
   resize: vertical; }
+
+@media (max-width: 992px) {
+  .about__card {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr; } }
+
+.services {
+  margin-top: 40px; }

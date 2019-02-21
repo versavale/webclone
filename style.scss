@@ -572,7 +572,7 @@ background-image: url(assets/port_2.jpg);
 }
 
 .contacts__m-icon--f {
-  margin-left: 3px;
+  margin-left: 4px;
 }
 
 .contacts__m-icon--p {
@@ -604,3 +604,20 @@ input, textarea {
 .textarea {
   resize: vertical;
 }
+
+// @media screen and (max-width: 795px) {
+// }
+
+@media (max-width: 992px) {
+ .about__card {
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr 1fr;
+  }
+}
+
+.services {
+  margin-top: 40px;
+}
+
+// @media (min-width: 993px) {
+// }
